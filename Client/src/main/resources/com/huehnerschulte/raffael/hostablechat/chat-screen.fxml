@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.huehnerschulte.raffael.hostablechat.controller.ChatViewController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu id="menuChannel" mnemonicParsing="false" text="Channel">
+            <items>
+              <MenuItem fx:id="menuAddChannel" mnemonicParsing="false" onAction="#handleAddChannel" text="Add Channel" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <SplitPane dividerPositions="0.31047865459249674" prefHeight="741.0" prefWidth="1280.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="675.0" prefWidth="394.0" SplitPane.resizableWithParent="false">
+               <children>
+                  <Label layoutX="149.0" layoutY="24.0" prefHeight="35.0" prefWidth="85.0" text="Channels">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="91.0" layoutY="54.0" prefHeight="10.0" prefWidth="200.0" />
+                  <ListView fx:id="channelList" editable="true" focusTraversable="false" layoutX="14.0" layoutY="77.0" prefHeight="656.0" prefWidth="370.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <BorderPane prefHeight="67.0" prefWidth="878.0" style="-fx-background-color: gray;">
+                     <center>
+                        <Label fx:id="chatTitle" text="Chat" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </center>
+                  </BorderPane>
+                  <ScrollPane fx:id="scrollPaneChat" hbarPolicy="NEVER" layoutX="-2.0" layoutY="66.0" prefHeight="627.0" prefWidth="878.0">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="693.0" prefWidth="876.0">
+                           <children>
+                              <TextFlow fx:id="chatFlowField" layoutX="3.0" layoutY="2.0" prefHeight="621.0" prefWidth="871.0" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </ScrollPane>
+                  <TextField fx:id="msgInputField" layoutX="3.0" layoutY="696.0" prefHeight="43.0" prefWidth="787.0" />
+                  <Button fx:id="sendButton" defaultButton="true" layoutX="790.0" layoutY="696.0" mnemonicParsing="false" onAction="#handleSendButtonAction" prefHeight="43.0" prefWidth="85.0">
+                     <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../../../../../Users/Raffael/Pictures/TestProjekt-Icons/send.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <BorderPane prefHeight="34.0" prefWidth="775.0">
+         <left>
+            <Label fx:id="status" alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="369.0" text="Status" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </left>
+         <right>
+            <Label fx:id="connection" alignment="CENTER" prefHeight="30.0" prefWidth="339.0" text="Connection" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </right>
+         <center>
+            <Label fx:id="accountLabel" alignment="CENTER" prefHeight="30.0" prefWidth="720.0" text="Account" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </center>
+      </BorderPane>
+   </children>
+</VBox>
