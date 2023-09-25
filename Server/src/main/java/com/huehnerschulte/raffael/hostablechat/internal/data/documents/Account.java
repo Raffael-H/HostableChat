@@ -18,7 +18,5 @@ public class Account extends BaseDocument{
 
     private String userTag;
 
-    private List<>
-
 
 }

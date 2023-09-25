@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.huehnerschulte.raffael</groupId>
-	<artifactId>hostablechat</artifactId>
+	<artifactId>Server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>hostablechat</name>
 	<description>A little project for demonstration purposes</description>

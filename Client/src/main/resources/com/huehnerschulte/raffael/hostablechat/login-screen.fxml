@@ -75,7 +75,7 @@
                <children>
                   <ImageView fitHeight="309.0" fitWidth="275.0" layoutX="44.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../../../Users/Raffael/Pictures/chat-logo-dummy.jpg" />
+                        <Image url="@../../../../assets/chat-logo-dummy.jpg" />
                      </image>
                   </ImageView>
                   <Label alignment="CENTER" layoutX="319.0" layoutY="32.0" prefHeight="53.0" prefWidth="166.0" text="Powered by">
@@ -85,7 +85,7 @@
                   </Label>
                   <ImageView fitHeight="195.0" fitWidth="248.0" layoutX="516.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../../../../../../../Users/Raffael/Pictures/g-logo.png" />
+                        <Image url="@../../../../assets/g-logo.png" />
                      </image>
                   </ImageView>
                </children>

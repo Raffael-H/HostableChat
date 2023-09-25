@@ -14,3 +14,7 @@ Server/.mvn/wrapper/maven-wrapper.jar
 Server/.mvn/wrapper/maven-wrapper.properties
 Server/mvnw
 Server/mvnw.cmd
+.idea/codeStyles/codeStyleConfig.xml
+.idea/codeStyles/Project.xml
+.idea/compiler.xml
+.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_11.xml

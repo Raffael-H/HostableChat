@@ -14,6 +14,6 @@ module com.huehnerschulte.raffael.hostablechat {
 
     opens com.huehnerschulte.raffael.hostablechat to javafx.fxml;
     exports com.huehnerschulte.raffael.hostablechat;
-    exports com.huehnerschulte.raffael.hostablechat.controller;
     opens com.huehnerschulte.raffael.hostablechat.controller to javafx.fxml;
+    exports com.huehnerschulte.raffael.hostablechat.controller;
 }
