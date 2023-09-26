@@ -15,7 +15,7 @@ public class AddChannelController {
     public void handleAddChannel(ActionEvent actionEvent) {
         ListView<String> channelList = chatViewController.channelList;
         ObservableList<String> channelListItems = channelList.getItems();
-        // add server communication here
+        // Hier code ergänzen für Server Kommunikation. (Channel speichern etc.)
         channelListItems.add(addChannelInput.getText());
         channelList.setItems(channelListItems);
         addChannelStage.close();
