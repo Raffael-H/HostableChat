@@ -20,7 +20,7 @@ public class AddChannelController {
         channelList.setItems(channelListItems);
         addChannelStage.close();
     }
-
+    // Kann zukünftig durch das Mediator-Pattern womöglich abgelöst werden
     public void setChatViewController(ChatViewController chatViewController) {
         this.chatViewController = chatViewController;
     }
