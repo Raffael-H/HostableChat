@@ -116,16 +116,16 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.11.0</version> <!-- Aktuelle Version -->
+                <version>3.11.0</version>
                 <configuration>
-                    <source>19</source> <!-- Version Ihrer JDK -->
+                    <source>19</source>
                     <target>19</target>
                 </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <version>3.5.0</version> <!-- Aktuelle Version des Shade Plugins -->
+                <version>3.5.0</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
