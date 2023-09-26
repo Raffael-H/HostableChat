@@ -54,7 +54,7 @@ public class ChatViewController {
             messageContainer.setFillWidth(true);
             messageContainer.setMinWidth(880);
             chatFlowField.getChildren().add(messageContainer);
-            // add code for adding message to messaging queue
+            // hier code hinzufügen um Nachricht in Message-Pipeline zu hinterlegen. (benötigt RabbitMQ or Kafka)
             msgInputField.clear();
 
             sendDummyResponse("Test Response");
